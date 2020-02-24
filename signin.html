@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Sign In</title>
+<script src="js/jsbn.js"></script>
+<script src="js/jsbn2.js"></script>
+<script src="js/sjcl.js"></script>
+<script src="js/aws-sdk.min.js"></script>
+<script src="js/aws-cognito-sdk.min.js"></script>
+<script src="js/amazon-cognito-identity.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/signin.js"></script>
+</head>
+
+<body>
+    
+    <div id="signin">
+        <h1>Sign In</h1>
+        <div id="message"><span style="color: red;"></span></div>
+        <form name="form-signin">
+			<span style="display: inline-block; width: 150px;">User Name</span>
+			<input type="text" id="username" placeholder="User Name">
+            <br/>
+            <span style="display: inline-block; width: 150px;">Password</span>
+            <input type="password" id="password" placeholder="Password">
+            <br/><br/>
+            <input type="button" id="signinButton" value="Sign In">
+	    </form>
+	</div>
+
+</body>
+
+</html>

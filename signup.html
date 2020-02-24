@@ -1,0 +1,41 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<script src="js/jsbn.js"></script>
+<script src="js/jsbn2.js"></script>
+<script src="js/sjcl.js"></script>
+<script src="js/aws-sdk.min.js"></script>
+<script src="js/aws-cognito-sdk.min.js"></script>
+<script src="js/amazon-cognito-identity.min.js"></script>
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/signup.js"></script>
+ 
+</head>
+<body>
+    
+    <div id="signup">
+      <h1>Sign Up</h1>
+      <form name='form-signup'>
+	      <span style="display: inline-block; width: 150px;">User Name</span>
+          <input type="text" id="username" placeholder="User Name">
+          <br/>
+          <span style="display: inline-block; width: 150px;">Email</span>
+          <input type="text" id="email" placeholder="Email">
+          <br/>
+          <span style="display: inline-block; width: 150px;">ClientId</span>
+          <input type="text" id="clientid" placeholder="ClientId">
+          <br/>
+          <span style="display: inline-block; width: 150px;">AuId</span>
+          <input type="text" id="auid" placeholder="AuId">
+          <br/>                    
+          <span style="display: inline-block; width: 150px;">Password</span>
+          <input type="password" id="password" placeholder="Password">
+          <br/><br/>
+        <input type="button" id="createAccount" value="Create Account">
+	  </form>
+	</div>
+
+</body>
+
+</html>
