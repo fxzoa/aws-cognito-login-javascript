@@ -32,15 +32,11 @@ var getUserAttribute = function() {
                 console.log(err);
                 $(location).attr("href", "signin.html");
             } else {
-                // ユーザの属性を取得
                 cognitoUser.getUserAttributes(function(err, result) {
-                    if (err) {
-                        $(location).attr("href", "signin.html");
-                    }
+                    if (err) $(location).attr("href", "signin.html");
 
-                    // 取得した属性情報を連想配列に格納
 					var currentUserData = {};
-                    for (i = 0; i < result.length; i++) {
+                    for (i=0; i<result.length; i++) {
                         currentUserData[result[i].getName()] = result[i].getValue();
                         console.log(result[i].getName()+" : "+result[i].getValue());
                     }
